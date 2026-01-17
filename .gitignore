@@ -1,0 +1,18 @@
+# MacOS
+.DS_Store
+
+# Editor specifics
+.vscode/
+.idea/
+
+# Go Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Project binary
+snip
