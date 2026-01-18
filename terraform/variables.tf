@@ -23,9 +23,9 @@ variable "lambda_zip_path" {
 }
 
 variable "base_url" {
-  description = "Base URL for generated short links (set after first deploy)"
+  description = "Base URL for generated short links"
   type        = string
-  default     = ""
+  default     = "https://es74k3z5m1.execute-api.us-east-1.amazonaws.com"
 }
 
 variable "log_level" {
