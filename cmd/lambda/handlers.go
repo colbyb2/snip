@@ -12,9 +12,11 @@ import (
 )
 
 func handleRequest(ctx context.Context, event events.APIGatewayV2HTTPRequest) (events.APIGatewayV2HTTPResponse, error) {
-	logger.Debug("received request",
+	logger.Info("received request",
 		"method", event.RequestContext.HTTP.Method,
 		"path", event.RawPath,
+		"rawQueryString", event.RawQueryString,
+		"routeKey", event.RouteKey,
 	)
 
 	method := event.RequestContext.HTTP.Method
