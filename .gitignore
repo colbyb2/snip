@@ -4,6 +4,7 @@
 # Editor specifics
 .vscode/
 .idea/
+*.swp
 
 # Go Binaries
 *.exe
@@ -16,3 +17,12 @@
 
 # Project binary
 snip
+
+# Build artifacts
+build/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
