@@ -108,7 +108,7 @@ func itemToLink(item map[string]types.AttributeValue) (*model.Link, error) {
 
 	if v, ok := item["click_count"].(*types.AttributeValueMemberN); ok {
 		var count int64
-		fmt.Sscanf(v.Value, "%d", &count)
+		_, _ = fmt.Sscanf(v.Value, "%d", &count)
 		link.ClickCount = count
 	}
 
