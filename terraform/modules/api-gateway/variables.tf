@@ -17,3 +17,9 @@ variable "lambda_invoke_arn" {
   description = "Invoke ARN of the Lambda function"
   type        = string
 }
+
+variable "base_url" {
+  description = "Base URL for generated short links"
+  type        = string
+  default     = "https://es74k3z5m1.execute-api.us-east-1.amazonaws.com"
+}

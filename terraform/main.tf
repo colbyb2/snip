@@ -41,10 +41,10 @@ module "lambda" {
 }
 
 module "api_gateway" {
-  source = "./modules/api_gateway"
+  source = "./modules/api-gateway"
 
   app_name             = var.app_name
   environment          = var.environment
-  lambda_function_name = module.lambda.lambda_function_name
+  lambda_function_name = module.lambda.function_name
   lambda_invoke_arn    = module.lambda.invoke_arn
 }
